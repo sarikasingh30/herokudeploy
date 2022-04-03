@@ -15,7 +15,8 @@ const userSchema=mongoose.Schema({
         this.password=hash;
         return next();
     });
-// make a method of userSchema and is already got imported to authorcontroller
+// make a method of UserSchema and is already got imported to authorcontroller
+
     userSchema.methods.checkPassword= function (password){
             return bcrypt.compareSync(password, this.password); 
            
