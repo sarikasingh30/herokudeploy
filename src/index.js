@@ -18,10 +18,10 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
 }
-app.listen(8000, async()=>{
+app.listen(port, async()=>{
     try {
         await connect();
-        console.log("Listening to port 4000");
+        console.log("Listening to port 8000");
     } catch (error) {
         console.log("Something went wrong",error);
 
