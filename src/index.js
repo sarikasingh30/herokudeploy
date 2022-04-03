@@ -9,7 +9,6 @@ var cors = require('cors');
  
 app.use(cors())
 app.use(express.json());
-// console.log("Hello")
 
 app.use("/users",userController);
 app.post("/register",register);
